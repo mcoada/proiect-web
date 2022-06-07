@@ -1,0 +1,171 @@
+.meniu {
+  display: flex;  
+  justify-content: space-between;
+
+}
+.meniu>nav{    
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+.meniu-lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+
+}
+
+.meniu-lista>li {
+     margin: auto 2rem;
+}
+.meniu-lista>li>a {
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+
+}
+.meniu-lista>input {
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-right: 5px;
+    
+    
+}
+
+.meniu {
+   
+    border-radius: 2rem;
+    border-width: 4px;
+}
+    
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: -80px;
+}
+.comp-lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 80px;
+
+}
+.comp-lista>li{
+    margin: auto 4rem;
+    padding: 0.8rem;
+    border: 3px solid black;
+    border-radius: 10px;
+  
+}
+
+ .img6{
+    display: flex;
+    margin-left: 400px;
+    margin-top: 80px;     
+    border-radius: 10px;    
+}
+
+.img2{
+    display: flex;
+    margin-left: 1035px;
+    border-radius: 10px;
+    margin-top: -463px;
+}
+
+.img4{
+    display: flex;
+    margin-left: 1035px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+
+.logo {
+    display: block;
+    margin-left: 23px;
+    margin-top: 8px;
+}
+
+body{
+    background-image: url(backgr.jpg);
+}
+
+.footer {
+    padding: 8rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-weight: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px;
+    background-color: rgb(109, 109, 109);
+    width: auto;
+}
+.footer>input {
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-right: 5px;
+    
+}
+
+.cfooter {
+    
+    list-style-type: none;
+    margin-left: 623px;
+    margin-top: -130px;
+
+}
+
+.mfooter {
+
+    list-style-type: none;
+    margin-left: 333px;
+    margin-top: -90px;
+
+}
+.rfooter{
+    list-style-type: none;
+    margin-left: 940px;
+    margin-top: -100px;
+}
+
+.cos {
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    list-style-type: none;
+    margin-left: 1200px;
+    
+
+}
+
+.cos>span {
+    margin: auto 4rem;
+    padding: 0.8rem;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+

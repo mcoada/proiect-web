@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARES</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="test1.css">
+	<title>Exercițiu css1</title>
+
+</head>
+
+
+
+
+
+  <div class="li-gr">
+    <img class="liv-gr" src="LivGratuita.jpg">
+  </div>      
+
+    <header class="meniu">
+        
+      <div class="container">
+      
+        <div class="overlay">
+     
+        </div>
+      </div>
+      
+
+      
+      
+      
+      
+      
+      
+      
+      <nav>
+        <ul class="meniu-lista"> 
+                  <li><a class="menu-loc" href="login.php">LOGIN </a></li>
+                    <li><a class="menu-loc" href="location.html">LOCATION</a></li>
+                
+
+                </ul>
+            </nav> 
+    </header>
+
+    <div class="container">
+      <form autocomplete="off">
+        <div class="finder">
+          <div class="finder__outer">
+            <div class="finder__inner">
+              <div class="finder__icon" ref="icon"></div>
+              <input class="finder__input" type="text" name="q" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const input = document.querySelector(".finder__input");
+      const finder = document.querySelector(".finder");
+      const form = document.querySelector("form");
+      
+      input.addEventListener("focus", () => {
+        finder.classList.add("active");
+      });
+      
+      input.addEventListener("blur", () => {
+        if (input.value.length === 0) {
+          finder.classList.remove("active");
+        }
+      });
+      
+      form.addEventListener("submit", (ev) => {
+        ev.preventDefault();
+        finder.classList.add("processing");
+        finder.classList.remove("active");
+        input.disabled = true;
+        setTimeout(() => {
+          finder.classList.remove("processing");
+          input.disabled = false;
+          if (input.value.length > 0) {
+            finder.classList.add("active");
+          }
+        }, 1000);
+      });
+    </script>
+    
+      
+        <img class="logo-2" href="index.html" src="logo-2.jpg" height="100px" width="180px" >
+     
+    
+    <section>
+        <ul class="db-meniu">
+          
+            <li><a href="">REPLICI AIRSOFT</a>
+                <ul>  
+                    <li><a href="asault.html">REPLICI ELECTRICE ASAULT</a></li>
+                    <li><a href="smg.html">REPLICI SMG</a></li>
+                </ul>
+              </li>
+            <li><a href="">PIESE SI ACCESORI</a>
+                <ul>
+                    <li><a href="acum.html">ACUMULATOARE</a>
+                    <li><a href="optica.html">DISPOZITIVE OPTICE</a>
+                </ul>
+              </li>
+            <li><a href="">ECHIPAMENT TACTIC</a>
+                <ul>
+                    <li><a href="ochelari.html">OCHELARI DE PROTECTIE</a>
+                    <li><a href="masti.html">MASTI DE PROTECTIE</a>
+                </ul>
+              </li>
+            <li><a href="">COMSUMABILE</a>
+                <ul>
+                  <li><a href="bile.html">BILE AIRSOFT</a>
+                  <li><a href="gas.html">GAS SI CO2</a>
+                </ul>
+             
+      </ul>
+
+        
+        </header>        
+
+        <div class="dropdown">
+          <button class="dropbtn">MENIU</button>
+          <div class="dropdown-content">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACTS</a>
+          </div>
+        </div>
+        
+        <article class="slideshow">
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img6.jpg" style="width:100%">
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img7.jpg" style="width:100%">
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img8.jpg" style="width:100%">
+            
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+         
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+      
+
+        </article>    
+
+        
+
+        
+          <li><a class="blick" id="blink1">SUPER OFERTA</a></li>
+      
+
+      
+        <style> 
+             #blink1 {
+  -webkit-animation: blink1 3s linear infinite;
+  animation: blink1 3s linear infinite;
+}
+              @-webkit-keyframes blink1 {
+                  0% { color: rgba(34, 34, 34, 1); }
+                  50% { color: rgba(34, 34, 34, 0); }
+                  100% { color: rgba(34, 34, 34, 1); }
+}
+              @keyframes blink1 {
+                 0% { color: rgba(34, 34, 34, 1); }
+                 50% { color: rgba(34, 34, 34, 0); }
+                 100% { color: rgba(34, 34, 34, 1); }
+}
+       </style>
+
+       <article class="sp">
+       <div class="cols1">
+        <div class="col1" ontouchstart="this.classList.toggle('hover');">
+          <div class="container1">
+            <div class="front1" style="background-image: url(https://www.maxairsoft.com/getimage/products/3559961809193a.jpg)">
+              <div class="inner1">
+                <p>M4A1</p>
+                <span>ASAULT RIFLE</span>
+              </div>
+            </div>
+            <div class="back1">
+              <div class="inner1">
+                <p>PUTERE(J):1.5 J   
+                  VITEZA B: 120M/S
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1" ontouchstart="this.classList.toggle('hover');">
+          <div class="container1">
+            <div class="front1" style="background-image: url(https://www.maxairsoft.com/getimage/products/8722650004543a.jpg)">
+              <div class="inner1">
+                <p>AK-47</p>
+                <span>ASAULT RIFLE</span>
+              </div>
+            </div>
+            <div class="back1">
+              <div class="inner1">
+                <p>PUTERE(J):1.5 J   
+                  VITEZA B: 120M/S
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1" ontouchstart="this.classList.toggle('hover');">
+          <div class="container1">
+            <div class="front1" style="background-image: url(https://www.maxairsoft.com/getimage/products/3559962009608a.jpg)">
+              <div class="inner1">
+                <p>P90</p>
+                <span>SMG</span>
+              </div>
+            </div>
+            <div class="back1">
+              <div class="inner1">
+                <p>PUTERE(J):1.5 J   
+                  VITEZA B: 120M/S
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+
+      <main class="content" role="main">
+        <h1>DESPRE MAGAZINUL NOSTRU </h1>
+        <p>PRODUSELE SUNT PENTRU ORICE VARSTA , DAR POT FI ACHIZITIONATE DOAR DE PERSOANE 18+ DIN MOTIVE DE SIGURANTA .</p>
+        <p>PENTRU A CUMPARA UN PRODUS VA RUGAM SA SUNATI LA NUMARUL DE TELEFON (+40752777666) , TEMPORAR COMANDA ONLINE NU ESTE POSIBILA.</p>
+      </main>
+      <footer class="fixed_footer">
+        <div class="content">
+          <p>MAGAZINUL NOSTRU SE AFLA IN ORASUL ALBA IULIA  VASILE ALECSANDRI 108 , LOCATIA O  PUTETI GASI  IN PARTE SUS A PAGINI IN CASUTA (LOCATION) UNDE PUTETI GASI TOATE TIPURILE DE ARME , ACCESORI DIN PE SITE SI SA LE PROBATI.</p>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+    
